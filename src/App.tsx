@@ -1,10 +1,17 @@
 import React from "react";
-import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import Header from "./components/header";
 
 function App() {
   return (
-    <div className="bg-black h-screen">
-      <Navbar />
+    <div className="flex flex-col lg:flex-col-reverse">
+
+      <div className="bg-red-500 text-white h-[calc(100vh-54px)] w-full">
+        <Header />
+        <div className="">About</div>
+      </div>
+
+      <Footer />
     </div>
   );
 }
