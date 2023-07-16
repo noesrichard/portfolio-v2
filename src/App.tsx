@@ -20,9 +20,9 @@ function App() {
         <SectionContainer>
           <div className="flex h-full justify-center items-center bg-blue-400"> Projects</div>
         </SectionContainer>
-        <SectionContainer>
-          <div className="flex h-full justify-center items-center bg-blue-400"> Contact me</div>
-        </SectionContainer>
+        <div className="bg-black lg:h-[calc(100vh-54px)] h-screen">
+          <div className="flex h-full justify-center items-center bg-pink-400"> Contact me</div>
+        </div>
       </div>
 
       <Navbar />
