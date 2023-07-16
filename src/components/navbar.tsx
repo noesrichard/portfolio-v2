@@ -10,7 +10,7 @@ import { MdWorkHistory } from "react-icons/md";
 import { LiaProjectDiagramSolid } from "react-icons/lia";
 import * as Collapsible from "@radix-ui/react-collapsible";
 
-const Footer = () => {
+const Navbar = () => {
   const [selected, setSelected] = useState(0);
   const [open, setOpen] = useState(false);
   const index = 0;
@@ -27,7 +27,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="lg:flex bg-black justify-between w-full text-white sticky bottom-0 lg:top-0">
+    <div className="lg:flex justify-between bg-black text-white fixed bottom-0 w-full lg:sticky lg:top-0" >
 
       <div className="flex">
         {items.map((item, index) => (
@@ -99,4 +99,4 @@ const ProfessionalLinks = () => {
   );
 };
 
-export default Footer;
+export default Navbar;
