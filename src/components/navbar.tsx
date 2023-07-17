@@ -32,6 +32,7 @@ const Navbar = () => {
       <div className="flex">
         {items.map((item, index) => (
           <NavbarItem
+            key={index}
             icon={item.icon}
             label={item.label}
             active={selected == index}
