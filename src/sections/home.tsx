@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { VscTerminalBash } from "react-icons/vsc";
-import "./home.css";
 
 const Home = () => {
   const [instruction, setInstruction] = useState("cd ..");
@@ -22,19 +21,10 @@ const Home = () => {
         break;
     }
   });
-
-  useEffect(() => {
-    const element = document.getElementById("prompt");
-    element?.classList.remove("typewriter");
-    element?.classList.add("typewriter");
-    void element?.offsetWidth;
-    console.log(element);
-  }, [instruction]);
-
   return (
     <section
       id="home"
-      className="text-xl lg:text-center px-8 w-full h-4/6 lg:h-full lg:pt-16 lg:flex lg:flex-col lg:items-center"
+      className="text-xl lg:text-center px-8 w-full h-3/6 lg:h-full lg:pt-16 lg:flex lg:flex-col lg:items-center"
     >
       <VscTerminalBash className="text-[200px] lg:text-[200px]" />
       <p className="text-3xl lg:text-6xl mt-4">Richard Carrión</p>
